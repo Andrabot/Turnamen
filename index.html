@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendly Match</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #5CB6DD;
+        }
+        header {
+            background-color: #4C4F7B;
+            color: #FFFFFF;
+            padding: 1px 0;
+            text-align: center;
+            position: relative;
+        }
+        #logo {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        #title {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .menu-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .menu-icon {
+            font-size: 24px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .menu-icon:hover {
+            color: #CCCCCC;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-shadow: black 1px 1px;
+            text-align: center;
+            background-color: #4C4F7B;
+            border-radius: 10px;
+            color: #FFFFFF;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .prize-image {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        #pool-prize-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+        .rules {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .follow-link {
+            background-color: #FFFFFF;
+            box-shadow: black 2px 3px;
+            padding: 5px 103px;
+            border-radius: 75px;
+            display: inline-block;
+            text-decoration: none;
+            color: #4C4F7B;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            background-color: #5CB6DD;
+            border-radius: 5px;
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 20px auto;
+        }
+        .button:hover {
+            background-color: #8e84e0;
+        }
+        .contact-info {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #FFFFFF;
+            padding: 10px;
+            border-radius: 5px;
+            color: #4C4F7B;
+        }
+        .follow-link img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .container h3,
+        .container h4 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Overlay styling */
+        #overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #menu-content {
+            position: fixed;
+            top: 0;
+            right: -50%;
+            width: 50%;
+            height: 100%;
+            background-color: #4C4F7B;
+            padding: 20px;
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+
+        #menu-content.active {
+            right: 0;
+        }
+
+        #menu-content h2 {
+            color: #FFFFFF;
+        }
+
+        #menu-content p {
+            color: #FFFFFF;
+        }
+
+        /* End Overlay styling */
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Friendly Match By Foxxx X JAGOAN</h1>
+        <img src="atas2.jpg" alt="Logo" id="logo">
+        <div class="menu-button">
+            <a href="#" class="menu-icon">&#9776;</a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>SYARAT PENDAFTARAN</h1>
+        <h3>Wajib Follow instagram & tiktok and join grup wa setiap team 4 orang follow</h3>
+        <h4>[ MODE SQUAD ONLY ]</h4>
+        <h4>[ MAIN EVENT FULL SLOT ]</h4>
+        <h4>[ POOL PRIZE 65.000.00 ]</h4>
+        <div class="prize-image">
+            <img src="map.jpg" alt="Pool Prize Image" id="pool-prize-image">
+        </div>
+        <div class="rules">
+            <p><a href="https://www.instagram.com/foxk20707?igsh=MWpoNnI4N25ha2c5NA==" class="follow-link"><img src="ig.jpg" alt="Instagram Logo"> FOLLOW IG FOXXX</a></p>
+            <p><a href="https://www.tiktok.com/@foxxdf0?_t=8jiHfzqoZiE&_r=1" class="follow-link"><img src="tt.jpg" alt="Twitter Logo"> FOLLOW TT FOXXX</a></p>
+            <p><a href="https://chat.whatsapp.com/HuYqfomPAatFpAARzjKsqi" class="follow-link"><img src="wa.jpg" alt="Facebook Logo"> JOIN GRUP FOXXX</a></p>
+        </div>
+        <a href="form.html" class="button">ISI FORMULIR </a>
+        <div class="contact-info">
+            <h2>Friendly Macth By Foxx X JAGOAN</h2>
+            <p>Support By Foxxx & JAGOAN</p>
+            <p>Store Growtopia & Tournament Freefire</p>
+        </div>
+    </div>
+
+    <!-- Overlay untuk menu -->
+    <div id="overlay">
+        <div id="menu-content">
+            <h2>Login</h2>
+            <p><a href="login.html">Login disini</a></p>
+            <h2>Tutorial</h2>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Tutorial di YouTube</a></p>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.getElementById('overlay').classList.toggle('active');
+    document.getElementById('menu-content').classList.toggle('active');
+});
+
+document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('overlay').classList.remove('active');
+    document.getElementById('menu-content').classList.remove('active');
+});
+
+</script>
+</body>
+</html>
